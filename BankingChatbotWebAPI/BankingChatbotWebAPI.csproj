@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'https' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'http' " />
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.18.1" />
+    <PackageReference Include="Google.Cloud.Dialogflow.V2" Version="4.22.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Serilog.AspNetCore" Version="8.0.3" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="8.0.4" />
+    <PackageReference Include="Serilog.Sinks.File" Version="6.0.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Twilio" Version="7.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Controllers\Models\" />
+    <None Remove="Services\MessageHandlers\Internal\" />
+    <None Remove="Services\MessageHandlers\NLP\" />
+    <None Remove="Services\Gateways\" />
+    <None Remove="Services\Connector\" />
+    <None Remove="Services\Connector\Bank\" />
+    <None Remove="Services\Connector\Bank\Models\" />
+    <None Remove="Services\Connector\Bank\Exceptions\" />
+    <None Remove="Services\MessageHandlers\Internal\Exceptions\" />
+    <None Remove="Middleware\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\Models\" />
+    <Folder Include="Services\MessageHandlers\Internal\" />
+    <Folder Include="Services\MessageHandlers\NLP\" />
+    <Folder Include="Services\Gateways\" />
+    <Folder Include="Services\Connector\" />
+    <Folder Include="Services\Connector\Bank\" />
+    <Folder Include="Services\Connector\Bank\Models\" />
+    <Folder Include="Services\Connector\Bank\Exceptions\" />
+    <Folder Include="Services\MessageHandlers\Internal\Exceptions\" />
+    <Folder Include="Middleware\" />
+  </ItemGroup>
+</Project>

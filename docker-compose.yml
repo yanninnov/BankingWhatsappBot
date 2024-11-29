@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  bankingchatbotwebapi:
+    container_name: whatsappbank-web-api
+    image: devinnov/whatsappbank:${TAG}
+    ports:
+      - "81:81"
