@@ -1,0 +1,64 @@
+# .NET Core / .NET 5+ / ASP.NET Core
+bin/
+obj/
+out/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio specific
+.vs/
+.vscode/
+
+# Rider specific
+.idea/
+
+# Build results
+build/
+[Aa]rtifacts/
+
+# NuGet
+*.nupkg
+packages/
+# Uncomment if you have NuGet cache files to exclude
+#*.snupkg
+
+# Logs
+*.log
+logs/
+
+# OS generated files
+[Dd]esktop.ini
+[Tt]humbs.db
+ehthumbs.db
+*.DS_Store
+*.directory
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Resharper files
+*.DotSettings.user
+
+# Azure Functions
+local.settings.json
+
+# Azure Pipelines
+.vsts/
+.yarn/
+
+# Yarn
+.yarn/
+.yarnrc.yml
+yarn.lock
+
+# Node.js dependencies
+node_modules/
+
+# Python virtual environments
+env
+
